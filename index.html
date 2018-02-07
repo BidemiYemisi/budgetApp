@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Budget Application</title>
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <main>
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3" style="background-color:grey; opacity: 0.9;">
+            <h3 class="white-text-font text-center">Available Budget</h3>
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="text-center" id="available-budget">000.000</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-12 green-bgd element-margin-bottom">
+                  <div class="col-md-2">
+                    <p class="text-center">Income</p>
+                  </div>
+                  <div class="col-md-8">
+                    <p class="text-right white-text-font" id="total-income"></p>
+                  </div>
+                  <div class="col-md-2">
+                    <p class="text-center"></p>
+                  </div>
+                </div>
+                <div class="col-md-12 red-bgd element-margin-bottom">
+                  <div class="col-md-2">
+                    <p class="text-center">Expenses</p>
+                  </div>
+                  <div class="col-md-8">
+                    <p class="text-right white-text-font" id="total-expenses"></p>
+                  </div>
+                  <div class="col-md-2">
+                    <p class="text-center white-text-font red-light-bgd" id="percentage"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row grey-bgd">
+        <div class="col-md-8 col-md-offset-2 element-margin-top">
+          <div class="col-md-1">
+            <select class="form-control add_type">
+            <option value="income">+</option>
+            <option value="expenses">-</option>
+          </select>
+          </div>
+          <div class="col-md-8">
+            <div class="form-group">
+              <input id="add_description" placeholder="Add description" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="form-group">
+              <input id="add_value" placeholder="Add value" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-1">
+            <button id="add-button"> <span class="glyphicon glyphicon-ok-circle"></span></button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 parent-container">
+          <div class="col-md-6">
+            <h4 class="element-margin-top"> Income </h4>
+            <table class="table table-striped">
+              <tbody class="income-list">
+                <!--<tr id= "income-n">
+                  <td>Car</td>
+                  <td><span>+</span> 234</td>
+                  <td>
+                  <div>
+                    <button type="button" class="btn btn-primary btn-sm glyphicon glyphicon-trash">
+                    </button>
+                  </div>
+                </td>
+                </tr>-->
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-6">
+            <h4 class="element-margin-top"> Expenses </h4>
+            <table class="table table-striped">
+              <tbody class="expenses-list">
+                <!--<tr>
+                  <td>Car</td>
+                  <td><span>-</span> 1,234</td>
+                  <td>
+                    <p class="text-center white-text-font red-light-bgd">%40</p>
+                  </td>
+                </tr>-->
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/lession.js"></script>
+</body>
+
+</html>

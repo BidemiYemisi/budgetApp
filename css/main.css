@@ -1,0 +1,48 @@
+html {
+  font-family: sans-serif;
+  /*font-size: 50px;*/
+}
+.jumbotron {
+  background-image: url(/img/banner.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+}
+.white-text-font {
+  color: #ffffff;
+}
+.jumbotron .h1, .jumbotron h1 {
+  color: #ffffff;
+}
+.grey-bgd {
+  background-color: #f3f1f1;
+}
+.jumbotron {
+  margin-bottom: 10px;
+}
+.jumbotron p {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+.jumbotron {
+    margin-bottom: -10px;
+}
+.glyphicon.glyphicon-ok-circle {
+  font-size: 35px;
+}
+.element-margin-top {
+  margin-top: 20px;
+}
+.element-margin-bottom {
+  margin-bottom: 20px;
+}
+.red-bgd {
+  background-color: #c25b5f;
+}
+.red-light-bgd {
+  background-color: #daa5a7;
+}
+.green-bgd {
+  background-color: #19be50;
+}
